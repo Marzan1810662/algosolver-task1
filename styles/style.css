@@ -1,0 +1,25 @@
+.container{
+    width: 70%;
+    border: 2px solid black;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.column-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    padding: 0 10% 3%;
+}
+
+.column{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 20px auto;
+}
