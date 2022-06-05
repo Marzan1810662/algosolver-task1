@@ -1,44 +1,49 @@
-.container{
+.container {
     width: 70%;
     border: 2px solid black;
     margin: 5% auto;
     text-align: center;
 }
 
-.column-container{
+.column-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5%;
     padding: 0 10% 3%;
 }
 
-.column{
+.column {
     border: 2px solid black;
     padding: 5px;
 }
 
-.box{
+.box {
     height: 100px;
     width: 100px;
     margin: 20px auto;
 }
 
-.color1{
+.color1 {
     background-color: olivedrab;
 }
-.color2{
+
+.color2 {
     background-color: rgb(255, 140, 0);
 }
-.color3{
+
+.color3 {
     background-color: purple;
 }
-.color4{
+
+.color4 {
     background-color: skyblue;
 }
-.color5{
+
+.color5 {
     background-color: gold;
 }
-.color6{
+
+.color6 {
     background-color: palevioletred;
 }
 
@@ -46,13 +51,49 @@
   opacity: .5;;
 } */
 
-#dragging{
+#dragging {
     opacity: .5;
-  }
+}
 
-/* @media only screen and (max-width: 990px) {
-    .container{
-        display: none;
+
+@media only screen and (max-width: 280px) {
+    .container {
+        margin-top: 50%;
+        width: 90%;
     }
-    
-} */
+
+    .column-container {
+        padding: 0 3% 3%;
+    }
+
+    .box {
+        height: 30px;
+        width: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 281px) and (max-width: 576px) {
+    .container {
+        margin-top: 50%;
+        width: 80%;
+    }
+
+    .box {
+        height: 50px;
+        width: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 577px)and (max-width: 992px) {
+    .container {
+        width: 80%;
+    }
+
+    .box {
+        height: 70px;
+        width: 70px;
+    }
+
+}
